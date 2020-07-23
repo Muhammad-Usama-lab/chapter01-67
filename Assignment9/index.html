@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: 'Biryani-Light';
+            src: url('Biryani-Light.ttf');
+        }
+
+.StudentRegisterationSection{
+    background-color: cornflowerblue;
+    height: auto;
+}
+
+#List tr{
+    margin: 2px;
+    color: white;
+
+}
+.btn{
+    color: white; 
+    outline: none;
+    padding: 5px 10px;
+    background-image: linear-gradient(to right,cornflowerblue,rgb(16, 60, 139));
+    margin: 3px;
+    border: none;
+}
+.btn:hover{
+    transition: 0.5s;
+    background-image: linear-gradient(to left,cornflowerblue,rgb(16, 60, 139));
+
+}
+        body {
+            font-family: 'Biryani-Light';
+        }
+
+        /* ---------------------------------GENERAL CSS END-------------------------------------------- */
+
+        .signUpformSection button {
+
+            padding: 5px;
+            border: none;
+            outline: none;
+            color: black;
+            background-color: whitesmoke;
+            transition: 0.5s ease;
+            margin: 5px;
+            margin-left: 40%;
+
+
+        }
+
+        .signUpformSection button:hover {
+            color: white;
+            background-color: black;
+
+        }
+
+        .signUpformSection input {
+
+            padding: 5px 10px;
+            font-weight: lighter;
+            width: 500px;
+
+            margin-left: 30px;
+
+        }
+
+        .show {
+            display: block;
+        }
+
+
+        .signUpformSection label {
+            width: 600px;
+            margin-right: 30px;
+
+
+        }
+
+        .signUpformSection td {
+            padding: 5px 10px;
+
+        }
+
+        #display,
+        #more {
+            display: none;
+        }
+
+        /* -----------------------------------------signUpForm END----------------------------- */
+
+
+
+        .StudentRegisterationSection input {
+            padding: 5px 10px;
+
+        }
+
+        #data td,
+        th {
+            padding: 5px 10px;
+        }
+
+
+
+        #data td input {
+            display: none;
+
+        }
+
+        .StudentRegisterationSection label {
+            width: 120%;
+
+
+        }
+    </style>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <br><br><br>
+    <a href="" onclick="pop();">Alert</a>
+    <br><br><br>
+    <img src="https://i.pinimg.com/736x/6f/24/f8/6f24f8bb99ff1c53e39a843ce3fc4ca2.jpg" alt="mobile image" width="300px"
+        height="auto" style="box-shadow: 0px 0px 5px  rgba(0,0,0,0.2);" onclick="showMessage();">
+    <img src="https://www.gizmochina.com/wp-content/uploads/2019/06/Galaxy-A60-featured-546x546.jpg" alt="mobile image"
+        width="300px" style="box-shadow: 0px 0px 5px  rgba(0,0,0,0.2);" onclick="showMessage();">
+    <img src="https://www.gizmochina.com/wp-content/uploads/2018/02/1-2.jpg" alt="mobile image" width="300px"
+        style="box-shadow: 0px 0px 5px  rgba(0,0,0,0.2);" onclick="showMessage();">
+    <img src="https://ctl.s6img.com/society6/img/nVwBchJz5--jYl1ByIG_n1HuWSI/w_700/cases/iphone11/slim/back/~artwork,fw_1300,fh_2000,iw_1300,ih_2000/s6-0012/a/3813041_14339120/~~/old-nokia-purple-cases.jpg"
+        onclick="showMessage();" alt="mobile image" width="300px" style="box-shadow: 0px 0px 5px  rgba(0,0,0,0.2);">
+
+    <br><br><br>
+
+
+
+
+
+    <table border="1px" align="center">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                NAME
+            </th>
+            <th>
+                CLASS
+            </th>
+        </tr>
+        <tr>
+            <td>
+                01
+            </td>
+
+            <td>
+                Usama
+            </td>
+            <td>
+                12
+            </td>
+            <td>
+                <button onclick="deleteRow(this);">
+                    DELETE
+                </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                02
+            </td>
+
+            <td>
+                Hasan
+            </td>
+            <td>
+                9
+            </td>
+            <td>
+                <button onclick="deleteRow(this);">
+                    DELETE
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                03
+            </td>
+
+            <td>
+                Kashif
+            </td>
+            <td>
+                7
+            </td>
+            <td>
+                <button onclick="deleteRow(this);">
+                    DELETE
+                </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                04
+            </td>
+
+            <td>
+                Talaal
+            </td>
+            <td>
+                10
+            </td>
+            <td>
+                <button onclick="deleteRow(this);">
+                    DELETE
+                </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                05
+            </td>
+
+            <td>
+                Ertugrul
+            </td>
+            <td>
+                15
+            </td>
+            <td>
+                <button onclick="deleteRow(this);">
+                    DELETE
+                </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                06
+            </td>
+
+            <td>
+                Talaal
+            </td>
+            <td>
+                5
+            </td>
+            <td>
+                <button onclick="deleteRow(this);">
+                    DELETE
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                07
+            </td>
+
+            <td>
+                Mahad
+            </td>
+            <td>
+                9
+            </td>
+            <td>
+                <button onclick="deleteRow(this);">
+                    DELETE
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                08
+            </td>
+
+            <td>
+                Altaf
+            </td>
+            <td>
+                2
+            </td>
+            <td>
+                <button onclick="deleteRow(this);">
+                    DELETE
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                09
+            </td>
+
+            <td>
+                Anas
+            </td>
+            <td>
+                4
+            </td>
+            <td>
+                <button onclick="deleteRow(this);">
+                    DELETE
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                10
+            </td>
+
+            <td>
+                Bilal
+            </td>
+            <td>
+                5
+            </td>
+            <td>
+                <button onclick="deleteRow(this);">
+                    DELETE
+                </button>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+    <br><br><br>
+    <img src="Images/1.jpg" alt="image" onmouseover='src="Images/2.jpg"' onmouseout="src='Images/1.jpg'" width="500px"
+        height="auto">
+    <br><br><br>
+
+
+
+
+
+
+    <center>
+        <h1 style="margin: 0;">
+            Counter
+        </h1>
+        <h2 style="margin: 0;" id="counter">
+            00
+        </h2>
+        <button onclick="increase();">Increase</button>
+        <button onclick="decrease();">Decrease</button>
+        <!-- --------------------------- -->
+
+
+
+
+
+
+
+    </center>
+    <!-- chapter 49-52 -->
+
+
+
+
+    <!-- Q1... -->
+
+
+    <section class="signUpformSection" style="padding: 70px 0px;">
+        <h3>SignUp FORM</h3>
+        <div class="mainDiv">
+
+
+            <div class="inputbox">
+                <label for="name">NAME</label><br>
+                <input type="text" id="name" required placeholder="enter your name">
+            </div>
+
+
+            <div class="inputbox">
+                <label for="fName">FATHER NAME</label><br>
+                <input type="text" id="fName" required placeholder="enter father's name">
+            </div>
+
+
+            <div class="inputbox">
+                <label for="Contact">MOBILE NUMBER</label> <br>
+                <input type="text" id="Contact" required placeholder="+92 0-000-000-000">
+            </div>
+
+
+            <div class="inputbox">
+                <label for="email">EMAIL</label>
+                <br>
+                <input type="email" id="email" required placeholder="enter your email">
+            </div>
+
+            <button name="submit" onclick="showData();">SUBMIT</button>
+
+
+
+        </div>
+
+
+        <table id="display">
+            <tr>
+                <th>NAME</th>
+                <td id="fillName">
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <th>FATHER NAME</th>
+                <td id="fillfName">
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <th>CONTACT</th>
+                <td id="fillContact"> </td>
+            </tr>
+
+            <tr>
+                <th>EMAIL</th>
+                <td id="fillEmail">
+                </td>
+            </tr>
+        </table>
+    </section>
+
+
+
+    <!-- Q2... -->
+    <p id="para">
+        Karachi is the biggest
+        <span id="more">city.</span>
+        <a onclick="showMore();" href="JavaScript:void(0)" id="showLink">show more</a>
+    </p>
+
+
+    <!-- //Q3... -->
+
+    <section class="StudentRegisterationSection" style="padding: 60px 20px;clear: both;">
+        <h2 style="text-align: center; color: rgb(7, 31, 77);">STUDENT REGISTERATION FORM</h2>
+        <table>
+            <tr>
+                <td>
+                    <label for="naam">NAME</label>
+                </td>
+                <td>
+                    <input type="text" name="" id="naam" placeholder="enter your name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fnaam">FATHER NAME</label>
+                </td>
+                <td>
+                    <input type="text" name="" id="fnaam" placeholder="enter your father name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="class">CLASS</label>
+                </td>
+                <td>
+                    <input type="text" name="" id="class" placeholder="enter your class">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="snaam">SCHOOL NAME</label>
+                </td>
+                <td>
+                    <input type="text" name="" id="snaam" placeholder="enter your school name">
+                </td>
+            </tr>
+
+            
+        </table>
+        <button class="btn" onclick="Details();">SUBMIT</button>
+
+
+<br><br><br>
+
+
+
+
+
+        <table id="List" >
+            <tr>
+                <th>NAME</th>
+                <th>FATHER NAME</th>
+                <th>CLASS</th>
+                <th>SCHOOL NAME</th>
+                <th>EDIT/DELETE</th>
+            </tr>
+
+
+
+          
+
+        </table>
+
+    </section>
+
+
+
+
+   
+
+</body>
+
+</html>
